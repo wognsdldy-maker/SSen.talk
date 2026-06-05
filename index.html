@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <link rel="icon" href="https://fav.farm/💬">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>쎈talk - 커뮤니케이션 센터 소통 창구</title>
@@ -175,32 +176,50 @@
             border-radius: 6px;
             cursor: pointer;
         }
+        
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+.center-icon {
+    width: 56px;
+    height: 56px;
+    color: var(--primary-color);
+}
+
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>쎈talk</h1>
-        <p class="description">커뮤니케이션 센터 구성원들을 위한 익명 소통 창구입니다.<br>작성하신 내용은 100% 익명으로 안전하게 처리됩니다.</p>
+        <div class="icon-wrapper">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="center-icon">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 0 1-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8Z" />
+    </svg>
+</div>
+
+        <h1>'함께 만드는 우리센터' 쎈talk</h1>
+        <p class="description">LG에너지솔루션 커뮤니케이션 센터 조직문화 개선을 위한 의견 수렴 플랫폼입니다.<br>작성하신 내용은 100% 익명으로 안전하게 처리됩니다.</p>
         
         <form id="talkForm">
             <div class="form-group">
                 <label>분류 (중복 선택 가능)</label>
                 <div class="checkbox-group">
                     <label class="checkbox-label">
-                        <input type="checkbox" name="category" value="센턴장님, 이것이 궁금해요!">
-                        센턴장님, 이것이 궁금해요!
+                        <input type="checkbox" name="category" value="센터장님, 이것이 궁금해요!">
+                        센터장님, 이것이 궁금해요!
                     </label>
                     <label class="checkbox-label">
-                        <input type="checkbox" name="category" value="더 나은 우리 센터를 위한 제안!">
-                        더 나은 우리 센터를 위한 제안!
+                        <input type="checkbox" name="category" value="더 나은 우리 센터를 위한 제안">
+                        더 나은 우리 센터를 위한 제안
                     </label>
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="content">의견 및 제안 내용</label>
-                <textarea id="content" placeholder="자유롭고 건설적인 의견을 입력해 주세요." maxlength="1000" required></textarea>
+                <label for="content">궁금한 사항 및 제안 내용</label>
+                <textarea id="content" placeholder="의견을 입력해 주세요." maxlength="1000" required></textarea>
                 <div class="count-wrapper"><span id="charCount">0</span>/1000</div>
             </div>
 
