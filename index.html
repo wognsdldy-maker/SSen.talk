@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <link rel="icon" href="https://fav.farm/💬">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>쎈talk - 커뮤니케이션 센터 소통 창구</title>
+    <link rel="icon" href="https://fav.farm/💬">
     <style>
         :root {
             --primary-color: #3CC1CF;
@@ -41,11 +41,23 @@
             max-width: 500px;
         }
 
+        .icon-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+
+        .center-icon {
+            width: 56px;
+            height: 56px;
+            color: var(--primary-color);
+        }
+
         h1 {
             color: var(--primary-color);
-            font-size: 24px;
+            font-size: 32px;
             font-weight: 700;
-            margin-bottom: 8px;
+            margin-bottom: 16px;
             text-align: center;
         }
 
@@ -53,8 +65,8 @@
             font-size: 14px;
             color: #64748b;
             text-align: center;
-            margin-bottom: 24px;
-            line-height: 1.5;
+            margin-bottom: 28px;
+            line-height: 1.8;
         }
 
         .form-group {
@@ -176,39 +188,36 @@
             border-radius: 6px;
             cursor: pointer;
         }
-        
-.icon-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 12px;
-}
-.center-icon {
-    width: 56px;
-    height: 56px;
-    color: var(--primary-color);
-}
-
     </style>
 </head>
 <body>
 
     <div class="container">
         <div class="icon-wrapper">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="center-icon">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 0 1-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8Z" />
-    </svg>
-</div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="center-icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 0 1-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8Z" />
+            </svg>
+        </div>
 
-        <h1>'함께 만드는 우리센터'<br>쎈talk</h1>
-        <p class="description">LG에너지솔루션 커뮤니케이션 센터의<br>조직문화 개선을 위한 의견 수렴 플랫폼입니다.<br><br>작성하신 내용은 100% 익명으로 안전하게 처리됩니다.</p>
+        <p style="text-align: center; font-size: 14px; font-weight: 600; color: var(--primary-color); margin-bottom: 4px;">'함께 만드는 우리센터'</p>
+        <h1>쎈talk</h1>
+        
+        <p class="description">
+            LG에너지솔루션 커뮤니케이션 센터의<br>
+            조직문화 개선을 위한 의견 수렴 플랫폼입니다.
+        </p>
+        
+        <p class="description" style="margin-top: -20px; font-weight: 600; color: #475569;">
+            작성하신 내용은 100% 익명으로 안전하게 처리됩니다.
+        </p>
         
         <form id="talkForm">
             <div class="form-group">
                 <label>분류 (중복 선택 가능)</label>
                 <div class="checkbox-group">
                     <label class="checkbox-label">
-                        <input type="checkbox" name="category" value="센터장님, 이것이 궁금해요!">
-                        센터장님, 이것이 궁금해요!
+                        <input type="checkbox" name="category" value="센터장님, 궁금해요!">
+                        센터장님, 궁금해요!
                     </label>
                     <label class="checkbox-label">
                         <input type="checkbox" name="category" value="더 나은 우리 센터를 위한 제안">
@@ -235,7 +244,7 @@
     </div>
 
     <script>
-        // ⚠️ 방금 메모장에 복사해 둔 구글 웹 앱 URL 주소를 아래 작은따옴표 안에 붙여넣으세요.
+        // ⚠️ 메모장에 복사해 둔 구글 웹 앱 URL 주소를 아래 작은따옴표 안에 붙여넣으세요.
         const GOOGLE_SCRIPT_URL = 'AKfycbw_GIDjYLcS9IwKDpGj3HKAgtxuoR4dSsgtH5vwc7bNWiho12T6Z33T2Y8AwIrhoPQp';
 
         const textarea = document.getElementById('content');
